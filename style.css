@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     margin: 0px;
-    border: 1px solid red;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+    overflow-x: hidden;
 }
 
 body {
@@ -22,9 +24,22 @@ header > * {
 }
 
 nav {
+    margin-top: 10px;
     width: 700px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+nav > .links {
+    display: flex;
+    gap: 20px;
+}
+
+nav > .links > .link {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
 }
 
 .intro {
@@ -36,8 +51,21 @@ nav {
     flex: 1;
 }
 
+.intro > .card > .info {
+    margin-bottom: 5px;
+}
+
+button {
+    background-color: #437ef2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 20px;
+}
+
 .card-img {
     display: flex;
+    background-color: #6d737c;
     justify-content: center;
     align-items: center;
 }
@@ -74,11 +102,21 @@ nav {
 
 .blocks > .block > .box {
     height: 120px;
-    border: 2px solid blue;
+    border: 2px solid #437ef2;
+    border-radius: 10px;
+}
+
+.blocks > .block > p {
+    font-size: 12px;
+    text-align: justify;
+    text-align-last: center;
+    text-justify: inter-character;
 }
 
 .section2 {
     display: flex;
+    flex-direction: column;
+    background-color: #e4e6ea;
     justify-content: center;
     align-items: center;
 }
@@ -94,23 +132,34 @@ nav {
     width: 600px;
 }
 
+.section2 > .content > p {
+    font-style: italic;
+}
+
 .section2 > .content > .author {
     text-align: end;
 }
 
 .section3 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .section3 > .content {
     display: flex;
+    background-color: #437ef2;
+    color: white;
     justify-content: space-evenly;
     align-items: center;
     width: 700px;
     margin: 60px 0px;
     padding: 30px 0px;
+}
+
+.section3 > .content > button {
+    border: 1px solid white;
 }
 
 footer {

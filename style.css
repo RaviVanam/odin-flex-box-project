@@ -76,3 +76,49 @@ nav {
     height: 120px;
     border: 2px solid blue;
 }
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 > * {
+    margin-top: 70px;
+}
+
+.section2 > :last-child {
+    margin-bottom: 60px;
+}
+.section2 > .content {
+    width: 600px;
+}
+
+.section2 > .content > .author {
+    text-align: end;
+}
+
+.section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 > .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 700px;
+    margin: 60px 0px;
+    padding: 30px 0px;
+}
+
+footer {
+    background-color: #242d39;
+    color: white;
+}
+
+footer > p {
+    text-align: center;
+    margin: 10px 0px;
+}

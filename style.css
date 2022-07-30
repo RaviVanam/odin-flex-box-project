@@ -31,6 +31,28 @@ nav {
     align-items: center;
 }
 
+@media (max-width: 790px) {
+    nav {
+        width: 100%;
+    }
+    header {
+        padding-left: 45px;
+        padding-right: 45px;
+    } 
+}
+
+@media (max-width: 550px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav > h3 {
+        font-size: x-large;
+    }
+    
+}
+
 nav > .links {
     display: flex;
     gap: 20px;
@@ -43,13 +65,32 @@ nav > .links > .link {
 }
 
 .intro {
-    width: 700px;
     display: flex;
 }
 
-.intro > * {
-    flex: 1;
+@media (max-width: 790px) {
+    .intro {
+        width: 350px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .intro > .card-img {
+        height: 150px;
+    }
 }
+
+.intro > * {
+    width: 350px;
+}
+
+@media (max-width: 400px) {
+    .intro > *, .intro {
+        width: 300px;
+    }
+}
+
+
 
 .intro > .card > .info {
     margin-bottom: 5px;
@@ -92,8 +133,15 @@ button {
 
 .blocks {
     display: flex;
-    width: 600px;
+    gap: 40px;
     justify-content: space-between;
+}
+
+@media (max-width: 670px) {
+    .blocks {
+        width: 300px;
+        flex-wrap: wrap;
+    }  
 }
 
 .blocks > .block {
@@ -129,7 +177,9 @@ button {
     margin-bottom: 60px;
 }
 .section2 > .content {
-    width: 600px;
+    max-width: 600px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .section2 > .content > p {
@@ -153,13 +203,32 @@ button {
     color: white;
     justify-content: space-evenly;
     align-items: center;
-    width: 700px;
-    margin: 60px 0px;
+    /* width: 800px; */
+    margin: 60px 60px;
     padding: 30px 0px;
+}
+
+@media(max-width: 500px) {
+    .section3 > .content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section3 > .content > button {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.section3 > .content > * {
+    margin: 0px 30px;
 }
 
 .section3 > .content > button {
     border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
